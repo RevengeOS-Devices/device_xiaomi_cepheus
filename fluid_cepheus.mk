@@ -28,7 +28,7 @@ $(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 FLUID_BUILD_TYPE := OFFICIAL
 PRODUCT_PRODUCT_PROPERTIES += \
 	ro.fluid.maintainer=elluzion \
-	ro.fluid.cpu=SM855
+	ro.fluid.cpu=SDM855
 
 # GApps
 TARGET_INCLUDE_GAPPS := true
