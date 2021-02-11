@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_cepheus.mk
+    $(LOCAL_DIR)/fluid_cepheus.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_cepheus-user \
-    awaken_cepheus-userdebug \
-    awaken_cepheus-eng
+    fluid_cepheus-user \
+    fluid_cepheus-userdebug \
+    fluid_cepheus-eng

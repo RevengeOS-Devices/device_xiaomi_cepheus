@@ -21,19 +21,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from cepheus device
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
-# Inherit some common Awaken stuff.
-$(call inherit-product, vendor/awaken/config/common.mk)
-$(call inherit-product, vendor/awaken/config/gsm.mk)
+# Inherit some common fluid stuff.
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
-#Awaken specific flags
-AWAKEN_BUILD_TYPE := OFFICIAL
-USE_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
-BUILD_LIVEWALLPAPERS := true
+# Fluid flags
+FLUID_BUILD_TYPE := OFFICIAL
+PRODUCT_PRODUCT_PROPERTIES += \
+	ro.fluid.maintainer=elluzion \
+	ro.fluid.cpu=SM855
+
+# GApps
+TARGET_INCLUDE_GAPPS := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_GOOGLE_RECORDER := true
+TARGET_INCLUDE_MINIMAL_GAPPS := true
 
 # Device identifier
-PRODUCT_NAME := awaken_cepheus
+PRODUCT_NAME := fluid_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9

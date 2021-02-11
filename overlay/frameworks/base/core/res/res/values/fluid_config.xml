@@ -16,7 +16,16 @@
  * limitations under the License.
  */
 -->
+
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds.  Do not translate. -->
+
 <resources>
-    <!-- Set the automatic brightness mode on by default -->
-    <bool name="def_screen_brightness_automatic_mode">true</bool>
+
+    <!-- FOD fingerprint scanner -->
+    <bool name="config_needCustomFODView">true</bool>
+
+    <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
+    <bool name="config_cleanupUnusedFingerprints">true</bool>
+
 </resources>
