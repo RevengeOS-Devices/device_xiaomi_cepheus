@@ -1,26 +1,27 @@
 [
     {
-        "remote":       "fluid-devices",
-        "repository":   "kernel_xiaomi_cepheus",
+        "remote":       "github",
+        "repository":   "EcrosoftXiao/kernel_xiaomi_cepheus",
         "target_path":  "kernel/xiaomi/cepheus",
-        "branch":	"eleven"
+        "branch":	    "eleven"
     },
     {
         "remote":       "fluid-devices",
         "repository":   "vendor_xiaomi_cepheus",
         "target_path":  "vendor/xiaomi/cepheus",
-        "branch":       "fluid-11-new"
+        "branch":       "fluid-11"
     },
     {
         "remote":       "gitlab",
         "repository":   "EcrosoftXiao/vendor_xiaomi_firmware",
-        "target_path":  "vendor/xiaomi/firmware"
+        "target_path":  "vendor/xiaomi/firmware",
+        "branch":       "master"
     },
     {
         "remote":       "github",
-        "repository":   "EcrosoftXiao/android_hardware_xiaomi",
+        "repository":   "sm8150-common/hardware_xiaomi",
         "target_path":  "hardware/xiaomi",
-        "branch":       "eleven"
+        "branch":       "evasi0n-wip"
     },
     {
         "remote":       "github",
@@ -29,13 +30,6 @@
         "target_path":  "hardware/qcom-caf/sm8150/display",
         "branch":       "fluid-11"
 
-    },
-    {
-	    "remote":	    "github",
-	    "repository":	"cepheus-development/android_vendor_qcom_opensource_display-commonsys-intf",
-	    "override":	    "LineageOS/android_vendor_qcom_opensource_display-commonsys-intf",
-	    "target_path":	"vendor/qcom/opensource/commonsys-intf/display",
-	    "branch":	    "fluid-11"
     },
     {
         "remote":       "github",
@@ -57,13 +51,6 @@
         "override":     "platform/external/fastrpc",
         "target_path":  "external/fastrpc",
         "branch":       "11"
-    },
-    {
-        "remote":       "github",
-        "repository":   "cepheus-development/prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8",
-        "override":     "platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8",
-        "target_path":  "prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8",
-        "branch":       "R"
     },
     {
         "remote":       "github",
