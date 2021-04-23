@@ -25,35 +25,6 @@
     },
     {
         "remote":       "github",
-        "repository":   "sm8150-common/hardware_qcom-caf_sm8150_display",
-        "override":     "LineageOS/android_hardware_qcom_display",
-        "target_path":  "hardware/qcom-caf/sm8150/display",
-        "branch":       "fluid-11"
-
-    },
-    {
-        "remote":       "github",
-        "repository":   "sm8150-common/hardware_qcom-caf_sm8150_media",
-        "override":     "LineageOS/android_hardware_qcom_media",
-        "target_path":  "hardware/qcom-caf/sm8150/media",
-        "branch":       "rippa-R-8150"
-    },
-    {
-        "remote":       "github",
-        "repository":   "sm8150-common/hardware_qcom-caf_sm8150_audio",
-        "override":     "LineageOS/android_hardware_qcom_audio",
-        "target_path":  "hardware/qcom-caf/sm8150/audio",
-        "branch":       "rippa-R-8150"
-    },
-    {
-        "remote":       "github",
-        "repository":   "stx-staging/android_external_fastrpc",
-        "override":     "platform/external/fastrpc",
-        "target_path":  "external/fastrpc",
-        "branch":       "11"
-    },
-    {
-        "remote":       "github",
         "repository":   "kdrag0n/proton-clang",
         "target_path":  "prebuilts/clang/host/linux-x86/clang-proton",
         "branch":       "master"
