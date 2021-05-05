@@ -25,7 +25,6 @@ import android.util.Log;
 
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
-import org.lineageos.settings.display.DcDimmingUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
     private static final boolean DEBUG = false;
@@ -39,7 +38,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         PendingResult pendingResult = goAsync();
         DiracUtils.initialize(context);
         DozeUtils.checkDozeService(context);
-        DcDimmingUtils.startService(context);
         pendingResult.finish();
     }
 }
