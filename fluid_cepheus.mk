@@ -26,7 +26,7 @@ $(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
 # Fluid flags
 FLUID_BUILD_TYPE := OFFICIAL
-PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_SYSTEM_PROPERTIES += \
 	ro.fluid.maintainer=elluzion \
 	ro.fluid.cpu=SDM855
 
