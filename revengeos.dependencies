@@ -1,8 +1,9 @@
 [
   {
-    "remote": "devices",
-    "repository"  : "vendor_xiaomi_cepheus",
-    "target_path" : "vendor/xiaomi/cepheus"
+    "remote": "github",
+    "repository": "Project-Fluid-Devices/vendor_xiaomi_cepheus",
+    "target_path": "vendor/xiaomi/cepheus",
+    "branch": "fluid-11"
   },
   {
     "remote": "devices",
