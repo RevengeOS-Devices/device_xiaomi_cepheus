@@ -21,23 +21,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from cepheus device
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
-# Inherit some common fluid stuff.
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+# Inherit some common revengeos stuff.
+$(call inherit-product, vendor/revengeos/config/common.mk)
 
-# Fluid flags
-FLUID_BUILD_TYPE := OFFICIAL
-
-# GApps
-TARGET_INCLUDE_GAPPS := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUDE_GOOGLE_RECORDER := true
+# ROS flags
+REVENGEOS_BUILDTYPE := OFFICIAL-TEST
 
 # Device identifier
-PRODUCT_NAME := fluid_cepheus
+PRODUCT_NAME := revengeos_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Include firmware
-$(call inherit-product, vendor/xiaomi/firmware/cepheus/firmware.mk)
+#$(call inherit-product, vendor/xiaomi/firmware/cepheus/firmware.mk)
