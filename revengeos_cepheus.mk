@@ -25,7 +25,7 @@ $(call inherit-product, device/xiaomi/cepheus/device.mk)
 $(call inherit-product, vendor/revengeos/config/common.mk)
 
 # ROS flags
-REVENGEOS_BUILDTYPE := OFFICIAL-TEST
+REVENGEOS_BUILDTYPE := OFFICIAL
 
 # Device identifier
 PRODUCT_NAME := revengeos_cepheus
